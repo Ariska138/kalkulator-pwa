@@ -61,6 +61,7 @@
       // Cek apakah browser support Service Worker
       window.addEventListener('load', () => {
         // Daftarkan Service Worker setelah halaman selesai load
+        navigator.serviceWorker.re
         navigator.serviceWorker.register('sw.js')
           .then(registration => {
             console.log('SW registered!');
